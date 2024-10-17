@@ -1,1 +1,1 @@
-# solito
+# solito app
