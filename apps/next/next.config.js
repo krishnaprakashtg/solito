@@ -26,9 +26,8 @@ const nextConfig = {
         pathname: '/**', // Match all images from the domain
       },
       {
-        protocol: 'http',
-        hostname: 'localhost',
-        port: '3000',
+        protocol: 'https',
+        hostname: 'cdn.dummyjson.com', 
         pathname: '/**', // Match all images from the domain
       },
     ],
