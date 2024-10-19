@@ -3,7 +3,8 @@
   "private": true,
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "packages/*",
+    "apps/*/*"
   ],
   "devDependencies": {
     "@types/react": "^18.2.21",
@@ -17,12 +18,12 @@
   },
   "scripts": {
     "native": "cd apps/expo && npm start",
-    "web": "cd apps/next && npm run dev",
-    "header": "cd apps/header-mfe && npm run dev",
-    "footer": "cd apps/footer-mfe && npm run dev",
-    "static": "cd apps/static-mfe && npm run dev",
-    "root": "cd apps/root-mfe && npm run dev",
-    "start-all": "npm-run-all --parallel header footer static root"
+    "next": "cd apps/next && npm run dev",
+    "header": "cd apps/web/header-mfe && npm run dev",
+    "footer": "cd apps/web/footer-mfe && npm run dev",
+    "static": "cd apps/web/static-mfe && npm run dev",
+    "root": "cd apps/web/root-mfe && npm run dev",
+    "web": "npm-run-all --parallel header footer static root"
   },
   "resolutions": {
     "metro": "~0.76.7",
